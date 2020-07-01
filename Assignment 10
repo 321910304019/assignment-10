@@ -1,57 +1,244 @@
 
 In [3]:
 
-def file_read(fname): #Python program to read an entire text file txt = open(fname) print(txt.read()) file_read('test.txt') 
+def file_read(fname):
+ #Python program to read an entire text file
+ txt = open(fname)
+ print(txt.read())
+ file_read('test.txt') 
 
-@@What is Python language? -Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. -Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java. -Python supports multiple programming paradigms, including object-oriented, imperative and functional programming or procedural styles. It features a dynamic type system and automatic memory management and has a large and comprehensive standard library. -The best way we learn anything is by practice and exercise questions. 
+@@What is Python language?
+ -Python is a widely used high-level, 
+general-purpose, interpreted,
+ dynamic programming language.
+ -Its design philosophy emphasizes code readability,
+ and its syntax allows programmers to express
+ concepts in fewer lines of code than possible in languages
+ such as C++ or Java. -Python supports
+ multiple programming paradigms, 
+including object-oriented, imperative and functional
+ programming or procedural styles.
+ It features a dynamic type system and automatic
+ memory management and has a large and comprehensive
+ standard library. -The best way we learn anything is
+ by practice and exercise questions. 
 
 In [4]:
 
-def file_read_from_head(fname, nlines): #Python program to read first n lines of a file from itertools import islice with open(fname) as f: for line in islice(f, nlines): print(line) a=int(input("Enter the No.Of lines to be read:")) file_read_from_head('test.txt',a) 
+def file_read_from_head(fname, nlines):
+ #Python program to read first n lines
+ of a file from itertools import
+ islice with open(fname) as f:
+ for line in islice(f, nlines): 
+print(line) 
+a=int(input("Enter the No.Of lines to be read:"))
+ file_read_from_head('test.txt',a) 
 
-Enter the No.Of lines to be read:4 @@What is Python language? -Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. -Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java. 
+Enter the No.Of lines to be read:
+4 @@What is Python language? 
+-Python is a widely used high-level,
+ general-purpose, interpreted,
+ dynamic programming language.
+ -Its design philosophy emphasizes
+ code readability, and its syntax
+ allows programmers to express
+ concepts in fewer lines of code
+ than possible in languages
+ such as C++ or Java. 
 
 In [5]:
 
-def file_read(fname): #Python program to read first n lines of a file from itertools import islice with open(fname, "w") as myfile: myfile.write("It's Everything about Python Exercises\n") myfile.write("Hence the line is appended in the file") txt = open(fname) print(txt.read()) file_read('test.txt') 
+def file_read(fname): 
+#Python program to read first
+ n lines of a file from itertools 
+import islice with open(fname, "w") 
+as myfile:
+ myfile.write("It's Everything about Python Exercises\n")
+ myfile.write("Hence the line is appended in the file")
+ txt = open(fname) print(txt.read())
+ file_read('test.txt') 
 
-It's Everything about Python Exercises Hence the line is appended in the file 
+It's Everything about Python
+ Exercises Hence the line is 
+appended in the file 
 
 In [6]:
 
-def LastNlines(fname, N): #Python program to read last n lines of a file with open(fname) as file: for line in (file.readlines() [-N:]): print(line, end ='') if __name__=='__main__': fname='Test.txt' N=int(input("Enter the No.Of last lines to be read:")) try: LastNlines(fname, N) except: print('File not found') 
+def LastNlines(fname, N): 
+#Python program to read last
+ n lines of a file with 
+open(fname) as file: 
+for line in (file.readlines() [-N:]):
+ print(line, end ='') if __name__=='__main__':
+ fname='Test.txt'
+ N=int(input("Enter the No.Of last lines to be read:"))
+ try: LastNlines(fname, N)
+ except: print('File not found') 
 
 Enter the No.Of last lines to be read:3 functional programming or procedural styles. It features a dynamic type system and automatic memory management and has a large and comprehensive standard library. -The best way we learn anything is by practice and exercise questions.
 
 In [7]:
 
-def file_read(fname): #Python program to read a file line by line store it into a variable with open (fname, "r") as myfile: data=myfile.readlines() print(data) file_read('test.txt') 
+def file_read(fname): 
+#Python program to read a 
+file line by line store it
+ into a variable with 
+open (fname, "r") as myfile: 
+data=myfile.readlines()
+ print(data) file_read('test.txt') 
 
-['@@What is Python language? \n', '-Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.\n', '-Its design philosophy emphasizes code readability, and its syntax allows programmers to express\n', ' concepts in fewer lines of code than possible in languages such as C++ or Java. \n', '-Python supports multiple programming paradigms, including object-oriented, imperative and \n', ' functional programming or procedural styles. It features a dynamic type system and automatic \n', ' memory management and has a large and comprehensive standard library.\n', '-The best way we learn anything is by practice and exercise questions.'] 
+['@@What is Python language?
+ \n', '-Python is a widely used 
+high-level, general-purpose,
+ interpreted, dynamic 
+programming language.
+\n', '-Its design philosophy 
+emphasizes code readability, 
+and its syntax allows programmers
+ to express\n', ' concepts
+ in fewer lines of code than
+ possible in languages such 
+as C++ or Java. \n',
+ '-Python supports multiple
+ programming paradigms, 
+including object-oriented,
+ imperative and \n', ' 
+functional programming or procedural
+ styles. It features a dynamic
+ type system and automatic \n', 
+' memory management and has
+ a large and comprehensive
+ standard library.\n',
+ '-The best way we learn anything 
+is by practice and exercise questions.'] 
 
 In [8]:
 
-def file_read(fname): #Python program to read a file line by line store it into an array content_array = [] with open(fname) as f: for line in f: content_array.append(line) print(content_array) file_read('test.txt') 
+def file_read(fname):
+ #Python program to read 
+a file line by line store 
+it into an 
+array content_array = [] with open(fname) as f:
+ for line in f:
+ content_array.append(line) print(content_array) 
+file_read('test.txt') 
 
-['@@What is Python language? \n'] ['@@What is Python language? \n', '-Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.\n'] ['@@What is Python language? \n', '-Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.\n', '-Its design philosophy emphasizes code readability, and its syntax allows programmers to express\n'] ['@@What is Python language? \n', '-Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.\n', '-Its design philosophy emphasizes code readability, and its syntax allows programmers to express\n', ' concepts in fewer lines of code than possible in languages such as C++ or Java. \n'] ['@@What is Python language? \n', '-Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.\n', '-Its design philosophy emphasizes code readability, and its syntax allows programmers to express\n', ' concepts in fewer lines of code than possible in languages such as C++ or Java. \n', '-Python supports multiple programming paradigms, including object-oriented, imperative and \n'] ['@@What is Python language? \n', '-Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.\n', '-Its design philosophy emphasizes code readability, and its syntax allows programmers to express\n', ' concepts in fewer lines of code than possible in languages such as C++ or Java. \n', '-Python supports multiple programming paradigms, including object-oriented, imperative and \n', ' functional programming or procedural styles. It features a dynamic type system and automatic \n'] ['@@What is Python language? \n', '-Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.\n', '-Its design philosophy emphasizes code readability, and its syntax allows programmers to express\n', ' concepts in fewer lines of code than possible in languages such as C++ or Java. \n', '-Python supports multiple programming paradigms, including object-oriented, imperative and \n', ' functional programming or procedural styles. It features a dynamic type system and automatic \n', ' memory management and has a large and comprehensive standard library.\n'] ['@@What is Python language? \n', '-Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.\n', '-Its design philosophy emphasizes code readability, and its syntax allows programmers to express\n', ' concepts in fewer lines of code than possible in languages such as C++ or Java. \n', '-Python supports multiple programming paradigms, including object-oriented, imperative and \n', ' functional programming or procedural styles. It features a dynamic type system and automatic \n', ' memory management and has a large and comprehensive standard library.\n', '-The best way we learn anything is by practice and exercise questions.'] 
+['@@What is Python language? \n',
+ '-Python is a widely used high-level,
+ general-purpose, interpreted,
+ dynamic programming language.\n']
+ ['@@What is Python language? \n',
+ '-Python is a widely used high-level,
+ general-purpose, interpreted, 
+dynamic programming language.\n',
+ '-Its design philosophy emphasizes 
+code readability, and its
+ syntax allows programmers
+ to express\n']
+ ['@@What is Python language? 
+\n', '-Python is a widely used
+ high-level, general-purpose,
+ interpreted, dynamic programming 
+language.\n', '-Its design philosophy 
+emphasizes code readability,
+ and its syntax allows
+ programmers to express\n',
+ ' concepts in fewer lines of 
+code than possible in languages
+ such as C++ or Java. \n'] 
+['@@What is Python language? 
+\n', '-Python is a widely used 
+high-level, general-purpose,
+ interpreted, dynamic programming
+ language.\n', '-Its design philosophy
+ emphasizes code readability,
+ and its syntax allows programmers
+ to express\n', ' concepts in fewer
+ lines of code than possible
+ in languages such as C++ or Java. 
+\n', '-Python supports multiple 
+programming paradigms, 
+including object-oriented,
+ imperative and \n'] 
+['@@What is Python language? \n', 
+'-Python is a widely used high-level,
+ general-purpose, interpreted, 
+dynamic programming language.\n',
+ '-Its design philosophy emphasizes
+ code readability, and its syntax
+ allows programmers to express\n', '
+ concepts in 
+fewer lines of code than possible
+ in languages such as C++ or Java. 
+\n', '-Python supports multiple 
+programming paradigms, including 
+object-oriented, imperative and \n',
+ ' functional programming or
+ procedural styles. It features
+ a dynamic type system and automatic \n']
+ ['@@What is Python language? 
+\n', '-Python is a widely used 
+high-level, general-purpose, 
+interpreted, dynamic programming 
+language.\n', '-Its design philosophy
+ emphasizes code readability, 
+and its syntax allows programmers
+ to express\n', ' concepts in fewer
+ lines of code than possible
+ in languages such as C++ or Java.
+ \n', '-Python supports multiple
+ programming paradigms, 
+including object-oriented, imperative and \n',
+ ' functional programming or procedural styles. 
+It features a dynamic type system and automatic \n', 
+' memory management and has a large
+ and comprehensive standard library.\n']
+ ['@@What is Python language? \n',
+ '-Python is a widely used high-level,
+ general-purpose, interpreted, dynamic programming language.\n', 
+'-Its design philosophy emphasizes code readability, and its syntax allows
+ programmers to express\n', ' concepts in fewer lines of code than 
+possible in languages such as C++ or Java. \n', '-Python supports
+ multiple programming paradigms, including object-oriented, imperative and \n',
+ ' functional programming or procedural styles. It features a dynamic type system and automatic \n', ' memory management 
+and has a large and comprehensive 
+standard library.\n', '-The best way we learn anything
+ is by practice and exercise questions.'] 
 
 In [10]:
 
-file=open("test.txt","r") #Python program to count the number of lines in a text file Count=0 Content=file.read() CoList=Content.split("\n") for i in CoList: if i: Count=Count+1 print("Number of lines in the file are:",Count) 
+file=open("test.txt","r")
+#Python program to count the 
+number of lines in a text file
+ Count=0 Content=file.read()
+ CoList=Content.split("\n") for 
+i in CoList: if i: 
+Count=Count+1 
+print("Number of lines in the file are:",Count) 
 
 Number of lines in the file are: 8 
 
 In [11]:
 
-def file_size(fname): #Python program to get the file size of a plain file import os statinfo = os.stat(fname) return statinfo.st_size print("File size in bytes of a plain file: ",file_size("test.txt")) 
+def file_size(fname):
+ #Python program to get the file 
+size of a plain file import os 
+statinfo = os.stat(fname) 
+return statinfo.st_size
+ print("File size in bytes of a plain file: ",file_size("test.txt")) 
 
 File size in bytes of a plain file: 686 
 
 In [13]:
 
-#Python program to copy the contents of a file to another file print("The file will be copied to a new file named abc.txt") from shutil import copyfile copyfile('test.txt','abc.txt') 
+#Python program to copy the 
+contents of a file to another 
+file print("The file will be copied to a new file named abc.txt") 
+from shutil import copyfile 
+copyfile('test.txt','abc.txt') 
 
-The file will be copied to a new file named abc.txt 
+The file will be copied to a new 
+file named abc.txt 
 
 Out[13]:
 
@@ -59,7 +246,31 @@ Out[13]:
 
 In [14]:
 
-def file_read(fname): #Python program to read a file line by line and store it into a list with open(fname) as f: content_list = f.readlines() print(content_list) file_read('test.txt') 
+def file_read(fname):
+ #Python program to read a 
+file line by line and store 
+it into a list with open(fname) as f: 
+content_list = f.readlines() print(content_list)
+ file_read('test.txt') 
 
-['@@What is Python language? \n', '-Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.\n', '-Its design philosophy emphasizes code readability, and its syntax allows programmers to express\n', ' concepts in fewer lines of code than possible in languages such as C++ or Java. \n', '-Python supports multiple programming paradigms, including object-oriented, imperative and \n', ' functional programming or procedural styles. It features a dynamic type system and automatic \n', ' memory management and has a large and comprehensive standard library.\n', '-The best way we learn anything is by practice and exercise questions.']
+['@@What is Python language? 
+\n', '-Python is a widely used
+ high-level, general-purpose, 
+interpreted, dynamic programming 
+language.\n', '-Its design
+ philosophy emphasizes code readability,
+ and its syntax allows programmers 
+to express\n', ' concepts in fewer
+ lines of code than possible in languages
+ such as C++ or Java. \n', 
+'-Python supports multiple
+ programming paradigms, including
+ object-oriented, imperative and \n',
+ ' functional programming or procedural
+ styles. It features a dynamic type
+ system and automatic \n', '
+ memory management and has a large and 
+comprehensive standard library.\n', 
+'-The best way we learn anything 
+is by practice and exercise questions.']
 
